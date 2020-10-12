@@ -1,0 +1,21 @@
+@media screen and (max-width:600px){
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+    .login-container{
+        height: 100vh;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+    }
+    .login-container #login-form{
+        width: 100%;
+        background-color: transparent;
+    }
+    .login-container .login-header{
+            font-size:40px;
+            color: #535353;
+            text-align: center;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+}

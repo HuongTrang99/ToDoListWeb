@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+  display: flex;
+}
+.centerColumn {
+  width: 70%;
+  height: 100vh;
+  background-color: #6074C2;
+}
+.centerColumn-header {
+  padding-top: 35px;
+  height: 110px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 55px;
+}
+.centerColumn-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+  width: 80%;
+  position: relative;
+}
+.centerColumn-content .taskItem {
+  height: 68px;
+  width: 731px;
+  background-color: white;
+  border-top: 1px solid  rgb(95,115,193);
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+/**/
+
+
+ul.taskContent {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul.taskContent li {
+  margin-bottom: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  width: 645px;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul.taskContent li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul.taskContent li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul.taskContent li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul.taskContent li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.centerColumn-content .header {
+  position: absolute;
+  top: 393px;
+  width:649px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+.centerColumn .centerColumn-content .addTask 
+{
+  background-color: #586CB7;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 90%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  
+}
+.centerColumn .centerColumn-content .addTask::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 9%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.leftColumn {
+   background-color: #bbb;
+    width: 500px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    
+} 
+.leftColumn  .idNote {
+width: 90%;
+margin: 10px ;
+height: 100px;
+
+}
+
+#uploader{
+-webkit-appearance: none;
+appearance: none;
+width: 100%;
+margin-bottom: 20px;
+}
+
+progress{
+  width: 300px;
+  height: 30px;
+}
+

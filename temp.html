@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>to do</title>
+	<link rel="stylesheet" href="./css/mregister.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+     <!-- <link rel="stylesheet" href="./css/register.css">  -->
+    <link rel="stylesheet" href="./css/todo.css">
+</head>
+<body>
+	<div class="toDoPageContainer">
+		<div class="toDoHeader">
+			To Do List
+		</div>
+		<div class="toDoMain">
+			
+			<div class="aside-left" id="AsideLeft">
+				<ul id="side-bar">
+					<li><a href="#MyDay">Ngày của tôi</a></li>
+					<li><a href="#ImportantTask">Quan trọng</a></li>
+					<li><a href="#AllTasks">Các tác vụ</a></li>
+					
+				</ul>
+				<div class="tasksContent">
+					<div class="myDay" id="MyDay">
+						<span class="myDayIcon"></span>
+						<span class="myDayCount"></span>
+					</div>
+					<div class="importantTask" id="ImportantTask">
+						<span class="importantIcon"></span>
+						<span class="importantCount"></span>
+					</div>
+					<div class="allTasks" id="AllTasks">
+						<span class="allTasksIcon"></span>
+						<span class="allTasksCount"></span>
+					</div>
+
+
+				</div>
+				<div class="create-list-task">
+					<button class="btn-cursor-pointer" 
+					id="create-list-task">+ New list task</button>
+				  </div>
+				  <div class="list-task">
+				  </div>
+			</div>
+
+		
+			<div class="todo-list">
+				<div class="todo-header">
+					<h2 class="list-title">My day</h2>
+					
+				</div>
+				<div class="todo-body">
+					<div class="tasks">
+						<!-- task 1 -->
+						<div class="task">
+							<input type="checkbox" id ="task-1">
+							<label for="task-1">
+								<span class="custom-checkbox"></span>
+								record todolist video</label>
+						</div>
+						<!-- task 2 -->
+						<div class="task">
+							<input type="checkbox" id ="task-2">
+							<label for="task-2">
+								<span class="custom-checkbox"></span>
+								another task</label>
+						</div>
+						<!-- task 3 -->
+						<div class="task">
+							<input type="checkbox" id ="task-3">
+							<label for="task-3">
+								<span class="custom-checkbox"></span>
+								a third task</label>
+						</div>
+					</div>
+					<div class="new-task-creator">
+						<form class="add-text-form" action="">
+							<input type="text" class="new list" placeholder="new task name" aria-label="new task name"> 
+							<button class="btn task" aria-label="create new list">+</button>
+						</form>
+					</div>
+		
+					<div class="delete-stuff">
+						<button class="btn delete">Clear complete tasks</button>
+						<button class="btn delete">Delete list</button>
+					</div>
+				</div>
+			</div>
+			<div class="aside-right">
+				<div class="taskDetail">
+					<div class="createNote">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+</body>
+</html>

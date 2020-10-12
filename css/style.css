@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bottom .left{
+    bottom: 0;
+    left: 0;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.no-pointer{
+    cursor: none;
+
+}
